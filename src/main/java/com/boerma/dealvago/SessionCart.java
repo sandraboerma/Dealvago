@@ -45,17 +45,21 @@ public class SessionCart {
 
     }
 
-    int calculateOrderlinePrice(int quantity) {
-        return 0;
+    int calculateOrderlinePrice(Product product, int quantity) {
+        return product.getPrice() * quantity;
     }
 
     int calculateTotalPrice() {
-        return 0;
+        int total = 0;
+        for (Product p : content) {
+            total += p.getPrice();
+        }
+        return total;
     }
 
     int size() {
-        return 0;
-    } // number of unique orderlines in the cart
+        return content.size();
+    }
 
     void clear() {
         content.clear();

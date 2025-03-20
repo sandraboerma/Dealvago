@@ -41,8 +41,8 @@ class SessionCartTest {
 
     @Test
     void calculateOrderlinePrice() {
-        sessionCart.calculateOrderlinePrice(2);
-        assertEquals(30, sessionCart.calculateOrderlinePrice(2));
+        Product product = new Product(7, "sample2", 18);
+        assertEquals(36, sessionCart.calculateOrderlinePrice(product,2));
     }
 
     @Test
@@ -64,8 +64,9 @@ class SessionCartTest {
     @Test
     void clear() {
         sessionCart.addProduct(7);
+        sessionCart.addProduct(3);
         sessionCart.clear();
-        assertEquals(1, sessionCart.size());
+        assertEquals(0, sessionCart.size());
     }
 
 }
@@ -74,9 +75,9 @@ class MockProductDAO implements ProductDAO {
     @Override
     public Optional<Product> getById(int productId) {
         if (productId == 3) {
-            return Optional.of(new Product(15, "mjölk", 3));
+            return Optional.of(new Product(3, "sample1", 15));
         } else if (productId == 7) {
-            return Optional.of(new Product(18, "limpa", 7));
+            return Optional.of(new Product(7, "sample2", 18));
         } else {
             return Optional.empty();
         }
