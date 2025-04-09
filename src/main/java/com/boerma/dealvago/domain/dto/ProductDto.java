@@ -1,31 +1,50 @@
 package com.boerma.dealvago.domain.dto;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class ProductDto {
     private int id;
     private String name;
-    private String category;
-    private double unitPrice;
+    private int unitPrice;
     private int stock;
 
     public ProductDto(){
-
     }
 
-    public ProductDto(int id, String name, String category, double unitPrice, int stock) {
+    public ProductDto(int id, String name, int unitPrice, int stock) {
         this.id = id;
         this.name = name;
-        this.category = category;
         this.unitPrice = unitPrice;
         this.stock = stock;
     }
-    
-    public ProductDto(int id, String name, double unitPrice, int stock) {
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getUnitPrice() {
+        return unitPrice;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setUnitPrice(int unitPrice) {
         this.unitPrice = unitPrice;
+    }
+
+    public void setStock(int stock) {
         this.stock = stock;
     }
 

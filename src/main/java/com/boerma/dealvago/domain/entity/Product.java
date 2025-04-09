@@ -19,8 +19,58 @@ public class Product {
     @Column(nullable = false)
     private int stock;
 
-    @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
-    private Category category;
+    public Product() {
+    }
 
+    public Product(int id, String name, int unitPrice, int stock) {
+        this.id = id;
+        this.name = name;
+        this.unitPrice = unitPrice;
+        this.stock = stock;
+    }
+
+    public Product(int i, String sample1, int i1) {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(int unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", unitPrice=" + unitPrice +
+                ", stock=" + stock +
+                '}';
+    }
 }

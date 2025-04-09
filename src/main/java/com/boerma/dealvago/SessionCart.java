@@ -1,68 +1,77 @@
 package com.boerma.dealvago;
 
+import com.boerma.dealvago.domain.dto.OrderlineDto;
+import com.boerma.dealvago.domain.dto.ProductDto;
+import com.boerma.dealvago.domain.entity.Product;
+import com.boerma.dealvago.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @SessionScope
 public class SessionCart {
 
-    ProductDAO productDAO;
+    ProductRepository productRepository;
+    List<OrderlineDto> cart = new ArrayList();
 
-    List<Product> content = new ArrayList();
-
-    public void setProductDAO(ProductDAO productDAO) {
-        this.productDAO = productDAO;
+    @Autowired
+    public SessionCart(ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
 
-    boolean addProduct(int productId) {
-        Optional<Product> orderline = productDAO.getById(productId);
-        if (orderline.isPresent()) {
-            content.add(orderline.get());
-            return true;
-        } else {
-            return false;
-        }
+    public void addOrderline(int productId, int quantity) {
+        productRepository.findById(productId).ifPresentOrElse(
+                product -> {
+                    int totalPrice = calculateOrderlinePrice(product, quantity);
+                    ProductDto productDto = new ProductDto(
+                            product.getId(),
+                            product.getName(),
+                            product.getUnitPrice(),
+                            product.getStock()
+                    );
+                    OrderlineDto newLine = new OrderlineDto(productDto, quantity, totalPrice);
+                    cart.add(newLine);
+                }, () -> {
+                    System.out.println("Product not found");
+                }
+        );
     }
 
-    int addOrderline(int quantity) {
-        return 0;
-    }
-
-    void modifyOrderline() {
-
-    }
-
-    void removeOrderline(int productId) {
-        content.removeIf((p) -> p.getId() == productId);
-    }
-
-    void getOrderline() {
+    public void modifyOrderline() {
 
     }
 
-    int calculateOrderlinePrice(Product product, int quantity) {
-        return product.getPrice() * quantity;
+    public void removeOrderline(int productId) {
+        cart.removeIf(orderLine -> orderLine.getProduct().getId() == productId);
     }
 
-    int calculateTotalPrice() {
+
+    public int calculateOrderlinePrice(Product product, int quantity) {
+        return product.getUnitPrice() * quantity;
+    }
+
+    public int calculateTotalPrice() {
         int total = 0;
-        for (Product p : content) {
-            total += p.getPrice();
+        for (OrderlineDto p : cart) {
+            total += p.getTotalPrice();
         }
         return total;
     }
 
-    int size() {
-        return content.size();
+    public int size() {
+        return cart.size();
     }
 
-    void clear() {
-        content.clear();
+    public List<OrderlineDto> getOrderlines() {
+        return new ArrayList<>(cart);
+    }
+
+    public void clear() {
+        cart.clear();
     }
 
 }

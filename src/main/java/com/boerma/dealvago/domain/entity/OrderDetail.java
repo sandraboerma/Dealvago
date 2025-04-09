@@ -25,6 +25,66 @@ public class OrderDetail {
     private String orderStatus;
 
     @OneToMany(mappedBy = "orderDetail", cascade = CascadeType.ALL)
-    private List<OrderLine> orderLines = new ArrayList<>();
+    private List<Orderline> orderlines = new ArrayList<>();
 
+    public OrderDetail() {
+
+    }
+
+    public OrderDetail(User customer, LocalDate orderDate, String orderStatus) {
+        this.customer = customer;
+        this.orderDate = orderDate;
+        this.orderStatus = orderStatus;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public User getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(User customer) {
+        this.customer = customer;
+    }
+
+    public LocalDate getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(LocalDate orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public List<Orderline> getOrderLines() {
+        return orderlines;
+    }
+
+    public void setOrderLines(List<Orderline> orderlines) {
+        this.orderlines = orderlines;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderDetail{" +
+                "id=" + id +
+                ", customer=" + customer +
+                ", orderDate=" + orderDate +
+                ", orderStatus='" + orderStatus + '\'' +
+                ", orderlines=" + orderlines +
+                '}';
+    }
 }
