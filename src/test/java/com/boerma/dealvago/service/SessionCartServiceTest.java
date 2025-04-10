@@ -1,4 +1,4 @@
-package com.boerma.dealvago;
+package com.boerma.dealvago.service;
 
 import com.boerma.dealvago.domain.entity.Product;
 import com.boerma.dealvago.repository.ProductRepository;
@@ -15,58 +15,58 @@ import java.util.function.Function;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SessionCartTest {
+class SessionCartServiceTest {
 
-    SessionCart sessionCart;
+    SessionCartService sessionCartService;
 
     @BeforeEach
     void setUp() {
-        sessionCart = new SessionCart(new MockProductRepository());
+        sessionCartService = new SessionCartService(new MockProductRepository());
     }
 
     @Test
     void addOrderline() {
-        sessionCart.addOrderline(3, 2);
-        assertEquals(1, sessionCart.size());
-        assertEquals(3, sessionCart.getOrderlines().get(0).getProduct().getId());
+        sessionCartService.addOrderline(3, 2);
+        assertEquals(1, sessionCartService.size());
+        assertEquals(3, sessionCartService.getOrderlines().get(0).getProduct().getId());
     }
 
     @Test
     void removeOrderline() {
-        sessionCart.addOrderline(3, 1);
-        sessionCart.addOrderline(7, 1);
-        sessionCart.removeOrderline(3);
-        assertEquals(1, sessionCart.size());
+        sessionCartService.addOrderline(3, 1);
+        sessionCartService.addOrderline(7, 1);
+        sessionCartService.removeOrderline(3);
+        assertEquals(1, sessionCartService.size());
     }
 
     @Test
     void calculateOrderlinePrice() {
         Product product = new Product(7, "sample2", 18, 10);
-        assertEquals(36, sessionCart.calculateOrderlinePrice(product,2));
+        assertEquals(36, sessionCartService.calculateOrderlinePrice(product,2));
     }
 
     @Test
     void calculateTotalPrice() {
-        sessionCart.addOrderline(3, 2);
-        sessionCart.addOrderline(7, 1);
-        assertEquals(48, sessionCart.calculateTotalPrice());
+        sessionCartService.addOrderline(3, 2);
+        sessionCartService.addOrderline(7, 1);
+        assertEquals(48, sessionCartService.calculateTotalPrice());
     }
 
     @Test
     void size() {
-        assertEquals(0, sessionCart.size());
-        sessionCart.addOrderline(7, 1);
-        assertEquals(1, sessionCart.size());
-        sessionCart.addOrderline(3, 1);
-        assertEquals(2, sessionCart.size());
+        assertEquals(0, sessionCartService.size());
+        sessionCartService.addOrderline(7, 1);
+        assertEquals(1, sessionCartService.size());
+        sessionCartService.addOrderline(3, 1);
+        assertEquals(2, sessionCartService.size());
     }
 
     @Test
     void clear() {
-        sessionCart.addOrderline(7, 2);
-        sessionCart.addOrderline(3, 5);
-        sessionCart.clear();
-        assertEquals(0, sessionCart.size());
+        sessionCartService.addOrderline(7, 2);
+        sessionCartService.addOrderline(3, 5);
+        sessionCartService.clear();
+        assertEquals(0, sessionCartService.size());
     }
 
 }

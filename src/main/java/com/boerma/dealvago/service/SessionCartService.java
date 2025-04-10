@@ -1,4 +1,4 @@
-package com.boerma.dealvago;
+package com.boerma.dealvago.service;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
@@ -13,13 +13,13 @@ import java.util.List;
 
 @Service
 @SessionScope
-public class SessionCart {
+public class SessionCartService {
 
     ProductRepository productRepository;
     List<OrderlineDto> cart = new ArrayList();
 
     @Autowired
-    public SessionCart(ProductRepository productRepository) {
+    public SessionCartService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
