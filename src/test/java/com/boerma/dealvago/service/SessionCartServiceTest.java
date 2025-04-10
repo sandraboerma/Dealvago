@@ -85,6 +85,11 @@ class MockProductRepository implements ProductRepository {
     }
 
     @Override
+    public List<Product> findByNameContainingIgnoreCase(String name) {
+        return List.of();
+    }
+
+    @Override
     public void flush() {
 
     }

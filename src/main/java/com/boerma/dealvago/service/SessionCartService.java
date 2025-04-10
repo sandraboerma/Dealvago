@@ -4,6 +4,8 @@ import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
 import com.boerma.dealvago.domain.entity.Product;
 import com.boerma.dealvago.repository.ProductRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
@@ -15,6 +17,7 @@ import java.util.List;
 @SessionScope
 public class SessionCartService {
 
+    private static final Logger logger = LoggerFactory.getLogger(SessionCartService.class);
     ProductRepository productRepository;
     List<OrderlineDto> cart = new ArrayList();
 
