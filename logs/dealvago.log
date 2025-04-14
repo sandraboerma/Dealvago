@@ -257,3 +257,993 @@
 2025-04-14T11:31:44.711+02:00  INFO 8644 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-04-14T11:31:44.716+02:00  INFO 8644 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-04-14T11:31:44.742+02:00  INFO 8644 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T13:35:46.466+02:00  INFO 19064 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 19064 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T13:35:46.468+02:00  INFO 19064 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T13:35:47.128+02:00  INFO 19064 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T13:35:47.186+02:00  INFO 19064 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2025-04-14T13:35:47.602+02:00  INFO 19064 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T13:35:47.614+02:00  INFO 19064 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T13:35:47.614+02:00  INFO 19064 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T13:35:47.655+02:00  INFO 19064 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T13:35:47.656+02:00  INFO 19064 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1142 ms
+2025-04-14T13:35:47.807+02:00  INFO 19064 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T13:35:47.883+02:00  INFO 19064 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T13:35:47.913+02:00  INFO 19064 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T13:35:48.200+02:00  INFO 19064 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T13:35:48.227+02:00  INFO 19064 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T13:35:48.660+02:00  INFO 19064 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38cf3ae1
+2025-04-14T13:35:48.662+02:00  INFO 19064 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T13:35:48.776+02:00  INFO 19064 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T13:35:49.619+02:00  INFO 19064 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T13:35:49.622+02:00  INFO 19064 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T13:35:49.912+02:00  WARN 19064 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T13:35:49.929+02:00  INFO 19064 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T13:35:50.256+02:00  INFO 19064 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T13:35:50.261+02:00  INFO 19064 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 4.381 seconds (process running for 5.279)
+2025-04-14T13:35:54.188+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T13:35:54.189+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T13:35:54.190+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T13:35:54.235+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:35:54.236+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:35:59.577+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 2 to the cart
+2025-04-14T13:35:59.647+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:35:59.647+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:00.983+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 2 and quantity 1 to the cart
+2025-04-14T13:36:01.016+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:01.017+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:05.167+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Adding product using Id 4 and quantity 2 to the cart
+2025-04-14T13:36:05.197+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:05.198+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:06.085+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 1 to the cart
+2025-04-14T13:36:06.112+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:06.115+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:12.007+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.controller.CartController   : Adding product using Id 3 and quantity 3 to the cart
+2025-04-14T13:36:12.033+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:12.034+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:16.647+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T13:36:16.669+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:16.669+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:27.820+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 2 to the cart
+2025-04-14T13:36:27.852+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:27.852+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:36:47.016+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 5 to the cart
+2025-04-14T13:36:47.048+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:36:47.048+02:00  INFO 19064 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:37:04.045+02:00  INFO 19064 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T13:37:04.066+02:00  INFO 19064 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T13:37:04.080+02:00  INFO 19064 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T13:37:04.089+02:00  INFO 19064 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T13:37:04.124+02:00  INFO 19064 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T13:49:23.123+02:00  INFO 17276 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 17276 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T13:49:23.125+02:00  INFO 17276 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T13:49:23.718+02:00  INFO 17276 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T13:49:23.766+02:00  INFO 17276 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-04-14T13:49:24.177+02:00  INFO 17276 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T13:49:24.192+02:00  INFO 17276 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T13:49:24.192+02:00  INFO 17276 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T13:49:24.234+02:00  INFO 17276 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T13:49:24.234+02:00  INFO 17276 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1060 ms
+2025-04-14T13:49:24.360+02:00  INFO 17276 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T13:49:24.396+02:00  INFO 17276 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T13:49:24.425+02:00  INFO 17276 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T13:49:24.651+02:00  INFO 17276 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T13:49:24.672+02:00  INFO 17276 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T13:49:24.929+02:00  INFO 17276 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7da77305
+2025-04-14T13:49:24.932+02:00  INFO 17276 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T13:49:25.001+02:00  INFO 17276 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T13:49:25.779+02:00  INFO 17276 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T13:49:25.782+02:00  INFO 17276 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T13:49:26.039+02:00  WARN 17276 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T13:49:26.058+02:00  INFO 17276 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T13:49:26.407+02:00  INFO 17276 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T13:49:26.414+02:00  INFO 17276 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.779 seconds (process running for 4.359)
+2025-04-14T13:49:31.084+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T13:49:31.085+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T13:49:31.087+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-14T13:49:31.124+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:49:31.124+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:49:33.939+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T13:49:34.039+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:49:34.040+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:49:38.809+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 5 to the cart
+2025-04-14T13:49:38.866+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T13:49:38.869+02:00  INFO 17276 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T13:49:52.320+02:00  INFO 17276 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T13:49:52.331+02:00  INFO 17276 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T13:49:52.335+02:00  INFO 17276 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T13:49:52.337+02:00  INFO 17276 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T13:49:52.343+02:00  INFO 17276 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:38:17.794+02:00  INFO 33448 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 33448 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:38:17.796+02:00  INFO 33448 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:38:18.573+02:00  INFO 33448 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:38:18.643+02:00  INFO 33448 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:38:19.199+02:00  INFO 33448 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:38:19.213+02:00  INFO 33448 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:38:19.214+02:00  INFO 33448 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:38:19.275+02:00  INFO 33448 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:38:19.276+02:00  INFO 33448 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1443 ms
+2025-04-14T15:38:19.452+02:00  INFO 33448 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:38:19.562+02:00  INFO 33448 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:38:19.609+02:00  INFO 33448 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:38:19.933+02:00  INFO 33448 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:38:19.961+02:00  INFO 33448 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:38:20.477+02:00  INFO 33448 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38cf3ae1
+2025-04-14T15:38:20.479+02:00  INFO 33448 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:38:20.630+02:00  INFO 33448 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:38:21.720+02:00  INFO 33448 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:38:21.722+02:00  INFO 33448 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:38:22.076+02:00  WARN 33448 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:38:22.103+02:00  INFO 33448 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:38:22.562+02:00  INFO 33448 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:38:22.570+02:00  INFO 33448 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 5.372 seconds (process running for 6.134)
+2025-04-14T15:38:27.142+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T15:38:27.142+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T15:38:27.144+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T15:38:27.195+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:38:27.195+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:38:31.378+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 5 to the cart
+2025-04-14T15:38:31.461+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:38:31.462+02:00  INFO 33448 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:38:31.535+02:00 ERROR 33448 --- [Dealvago] [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "customerform": Exception evaluating SpringEL expression: "item.product.name" (template: "customerform" - line 52, col 13)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.product.name" (template: "customerform" - line 52, col 13)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'product' cannot be found on object of type 'com.boerma.dealvago.domain.dto.OrderlineDto' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 64 common frames omitted
+
+2025-04-14T15:38:31.555+02:00 ERROR 33448 --- [Dealvago] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.product.name" (template: "customerform" - line 52, col 13)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'product' cannot be found on object of type 'com.boerma.dealvago.domain.dto.OrderlineDto' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-14T15:38:44.282+02:00  INFO 33448 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T15:38:44.293+02:00  INFO 33448 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T15:38:44.296+02:00  INFO 33448 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:38:44.298+02:00  INFO 33448 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T15:38:44.306+02:00  INFO 33448 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:40:53.668+02:00  INFO 24416 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 24416 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:40:53.670+02:00  INFO 24416 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:40:54.349+02:00  INFO 24416 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:40:54.407+02:00  INFO 24416 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:40:54.863+02:00  INFO 24416 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:40:54.890+02:00  INFO 24416 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:40:54.891+02:00  INFO 24416 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:40:54.942+02:00  INFO 24416 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:40:54.943+02:00  INFO 24416 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1223 ms
+2025-04-14T15:40:55.063+02:00  INFO 24416 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:40:55.122+02:00  INFO 24416 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:40:55.146+02:00  INFO 24416 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:40:55.366+02:00  INFO 24416 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:40:55.389+02:00  INFO 24416 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:40:55.669+02:00  INFO 24416 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c67395
+2025-04-14T15:40:55.671+02:00  INFO 24416 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:40:55.754+02:00  INFO 24416 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:40:56.549+02:00  INFO 24416 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:40:56.555+02:00  INFO 24416 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:40:56.851+02:00  WARN 24416 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:40:56.866+02:00  INFO 24416 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:40:57.182+02:00  INFO 24416 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:40:57.187+02:00  INFO 24416 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.966 seconds (process running for 4.605)
+2025-04-14T15:41:01.809+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T15:41:01.809+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T15:41:01.811+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T15:41:01.852+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:41:01.853+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:41:05.067+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T15:41:05.158+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:41:05.160+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:41:09.259+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 2 and quantity 3 to the cart
+2025-04-14T15:41:09.289+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:41:09.291+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:41:17.463+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 4 to the cart
+2025-04-14T15:41:17.493+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:41:17.494+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:41:17.870+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T15:41:17.885+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-9] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:41:17.886+02:00  INFO 24416 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:41:38.232+02:00  INFO 24416 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T15:41:38.240+02:00  INFO 24416 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T15:41:38.243+02:00  INFO 24416 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:41:38.246+02:00  INFO 24416 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T15:41:38.264+02:00  INFO 24416 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:48:26.029+02:00  INFO 5296 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 5296 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:48:26.031+02:00  INFO 5296 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:48:26.626+02:00  INFO 5296 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:48:26.697+02:00  INFO 5296 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:48:27.215+02:00  INFO 5296 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:48:27.228+02:00  INFO 5296 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:48:27.228+02:00  INFO 5296 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:48:27.301+02:00  INFO 5296 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:48:27.302+02:00  INFO 5296 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2025-04-14T15:48:27.461+02:00  INFO 5296 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:48:27.508+02:00  INFO 5296 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:48:27.532+02:00  INFO 5296 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:48:27.749+02:00  INFO 5296 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:48:27.771+02:00  INFO 5296 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:48:28.011+02:00  INFO 5296 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cdfbbef
+2025-04-14T15:48:28.014+02:00  INFO 5296 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:48:28.082+02:00  INFO 5296 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:48:28.851+02:00  INFO 5296 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:48:28.853+02:00  INFO 5296 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:48:29.130+02:00  WARN 5296 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:48:29.145+02:00  INFO 5296 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:48:29.449+02:00  INFO 5296 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:48:29.456+02:00  INFO 5296 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.86 seconds (process running for 4.585)
+2025-04-14T15:48:35.247+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T15:48:35.247+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T15:48:35.248+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T15:48:35.289+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:48:35.290+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:48:40.112+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='una'
+2025-04-14T15:48:40.113+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Searching products with keyword 'una'
+2025-04-14T15:48:44.889+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 2 and quantity 3 to the cart
+2025-04-14T15:48:44.942+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:48:44.943+02:00  INFO 5296 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:48:44.975+02:00 ERROR 5296 --- [Dealvago] [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "customerform": Exception evaluating SpringEL expression: "line.product.id" (template: "customerform" - line 58, col 51)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "line.product.id" (template: "customerform" - line 58, col 51)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'product' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 64 common frames omitted
+
+2025-04-14T15:48:44.985+02:00 ERROR 5296 --- [Dealvago] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "line.product.id" (template: "customerform" - line 58, col 51)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'product' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-14T15:49:18.455+02:00  INFO 5296 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T15:49:18.469+02:00  INFO 5296 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T15:49:18.475+02:00  INFO 5296 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:49:18.481+02:00  INFO 5296 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T15:49:18.506+02:00  INFO 5296 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:50:30.889+02:00  INFO 31056 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 31056 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:50:30.892+02:00  INFO 31056 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:50:31.651+02:00  INFO 31056 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:50:31.724+02:00  INFO 31056 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:50:32.091+02:00  INFO 31056 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:50:32.101+02:00  INFO 31056 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:50:32.102+02:00  INFO 31056 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:50:32.143+02:00  INFO 31056 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:50:32.143+02:00  INFO 31056 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2025-04-14T15:50:32.256+02:00  INFO 31056 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:50:32.290+02:00  INFO 31056 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:50:32.317+02:00  INFO 31056 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:50:32.527+02:00  INFO 31056 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:50:32.547+02:00  INFO 31056 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:50:32.789+02:00  INFO 31056 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23321be7
+2025-04-14T15:50:32.791+02:00  INFO 31056 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:50:32.855+02:00  INFO 31056 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:50:33.668+02:00  INFO 31056 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:50:33.671+02:00  INFO 31056 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:50:33.948+02:00  WARN 31056 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:50:33.965+02:00  INFO 31056 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:50:34.282+02:00  INFO 31056 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:50:34.288+02:00  INFO 31056 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.896 seconds (process running for 4.512)
+2025-04-14T15:50:37.118+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T15:50:37.118+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T15:50:37.119+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T15:50:37.152+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:50:37.152+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:50:39.418+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T15:50:39.444+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:50:39.444+02:00  INFO 31056 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:50:39.459+02:00 ERROR 31056 --- [Dealvago] [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "customerform": Exception evaluating SpringEL expression: "line.productDto.id" (template: "customerform" - line 58, col 51)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "line.productDto.id" (template: "customerform" - line 58, col 51)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'productDto' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 64 common frames omitted
+
+2025-04-14T15:50:39.462+02:00 ERROR 31056 --- [Dealvago] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "line.productDto.id" (template: "customerform" - line 58, col 51)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'productDto' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:100) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:66) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.3.jar:6.2.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-14T15:54:08.455+02:00  INFO 31056 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T15:54:08.467+02:00  INFO 31056 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T15:54:08.471+02:00  INFO 31056 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:54:08.473+02:00  INFO 31056 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T15:54:08.485+02:00  INFO 31056 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:54:36.000+02:00  INFO 37212 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 37212 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:54:36.001+02:00  INFO 37212 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:54:36.547+02:00  INFO 37212 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:54:36.593+02:00  INFO 37212 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:54:36.982+02:00  INFO 37212 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:54:36.992+02:00  INFO 37212 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:54:36.993+02:00  INFO 37212 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:54:37.036+02:00  INFO 37212 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:54:37.036+02:00  INFO 37212 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 986 ms
+2025-04-14T15:54:37.241+02:00  INFO 37212 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:54:37.292+02:00  INFO 37212 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:54:37.321+02:00  INFO 37212 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:54:37.568+02:00  INFO 37212 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:54:37.594+02:00  INFO 37212 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:54:37.901+02:00  INFO 37212 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1242d96b
+2025-04-14T15:54:37.903+02:00  INFO 37212 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:54:37.973+02:00  INFO 37212 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:54:38.793+02:00  INFO 37212 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:54:38.796+02:00  INFO 37212 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:54:39.063+02:00  WARN 37212 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:54:39.083+02:00  INFO 37212 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:54:39.431+02:00  INFO 37212 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:54:39.435+02:00  INFO 37212 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.927 seconds (process running for 4.56)
+2025-04-14T15:54:44.296+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T15:54:44.296+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T15:54:44.298+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T15:54:44.336+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:54:44.336+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:54:46.049+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
+2025-04-14T15:54:46.115+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:54:46.115+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:54:51.533+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 1 to the cart
+2025-04-14T15:54:51.551+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:54:51.552+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:02.871+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Adding product using Id 6 and quantity 2 to the cart
+2025-04-14T15:55:02.899+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:55:02.900+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:16.133+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
+2025-04-14T15:55:16.165+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-9] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:55:16.165+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:25.491+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.controller.CartController   : Updating product using Id 1 and quantity 2 in the cart
+2025-04-14T15:55:25.509+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:55:25.509+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:33.516+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Updating product using Id 1 and quantity 3 in the cart
+2025-04-14T15:55:33.547+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:55:33.547+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:38.569+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Removing product using Id 1 from the cart
+2025-04-14T15:55:38.585+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T15:55:38.586+02:00  INFO 37212 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T15:55:57.827+02:00  INFO 37212 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T15:55:57.834+02:00  INFO 37212 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T15:55:57.838+02:00  INFO 37212 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:55:57.839+02:00  INFO 37212 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T15:55:57.847+02:00  INFO 37212 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T15:59:56.658+02:00  INFO 7468 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 7468 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T15:59:56.660+02:00  INFO 7468 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T15:59:57.267+02:00  INFO 7468 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T15:59:57.318+02:00  INFO 7468 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2025-04-14T15:59:57.764+02:00  INFO 7468 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T15:59:57.775+02:00  INFO 7468 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T15:59:57.775+02:00  INFO 7468 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T15:59:57.813+02:00  INFO 7468 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T15:59:57.813+02:00  INFO 7468 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1102 ms
+2025-04-14T15:59:57.923+02:00  INFO 7468 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T15:59:57.960+02:00  INFO 7468 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T15:59:57.986+02:00  INFO 7468 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T15:59:58.216+02:00  INFO 7468 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T15:59:58.236+02:00  INFO 7468 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T15:59:58.513+02:00  INFO 7468 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@574ebdaf
+2025-04-14T15:59:58.515+02:00  INFO 7468 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T15:59:58.597+02:00  INFO 7468 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T15:59:59.381+02:00  INFO 7468 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T15:59:59.383+02:00  INFO 7468 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T15:59:59.686+02:00  WARN 7468 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T15:59:59.702+02:00  INFO 7468 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T15:59:59.990+02:00  INFO 7468 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T15:59:59.995+02:00  INFO 7468 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.888 seconds (process running for 4.529)
+2025-04-14T16:00:03.575+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T16:00:03.575+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T16:00:03.576+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T16:00:03.618+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:03.618+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:00:07.901+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
+2025-04-14T16:00:07.996+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:07.997+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:00:15.666+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 3 and quantity 2 to the cart
+2025-04-14T16:00:15.688+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:15.689+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:00:31.675+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 5 to the cart
+2025-04-14T16:00:31.713+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:31.715+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:00:39.553+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Updating product using Id 1 and quantity 2 in the cart
+2025-04-14T16:00:39.566+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:39.567+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:00:54.261+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.controller.CartController   : Updating product using Id 5 and quantity 2 in the cart
+2025-04-14T16:00:54.278+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:00:54.278+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:01:00.636+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Updating product using Id 5 and quantity 15 in the cart
+2025-04-14T16:01:00.652+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:01:00.652+02:00  INFO 7468 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:02:58.468+02:00  INFO 7468 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T16:02:58.495+02:00  INFO 7468 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T16:02:58.521+02:00  INFO 7468 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T16:02:58.523+02:00  INFO 7468 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T16:02:58.535+02:00  INFO 7468 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T16:04:04.519+02:00  INFO 31028 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 31028 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T16:04:04.521+02:00  INFO 31028 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T16:04:05.020+02:00  INFO 31028 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T16:04:05.065+02:00  INFO 31028 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2025-04-14T16:04:05.495+02:00  INFO 31028 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T16:04:05.507+02:00  INFO 31028 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T16:04:05.507+02:00  INFO 31028 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T16:04:05.552+02:00  INFO 31028 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T16:04:05.553+02:00  INFO 31028 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 990 ms
+2025-04-14T16:04:05.689+02:00  INFO 31028 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T16:04:05.731+02:00  INFO 31028 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T16:04:05.763+02:00  INFO 31028 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T16:04:06.045+02:00  INFO 31028 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T16:04:06.072+02:00  INFO 31028 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T16:04:06.323+02:00  INFO 31028 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5aa7cfdf
+2025-04-14T16:04:06.325+02:00  INFO 31028 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T16:04:06.384+02:00  INFO 31028 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T16:04:07.166+02:00  INFO 31028 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T16:04:07.170+02:00  INFO 31028 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T16:04:07.465+02:00  WARN 31028 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T16:04:07.487+02:00  INFO 31028 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T16:04:07.879+02:00  INFO 31028 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T16:04:07.887+02:00  INFO 31028 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.867 seconds (process running for 4.492)
+2025-04-14T16:04:16.149+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T16:04:16.150+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T16:04:16.156+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-04-14T16:04:16.313+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:04:16.314+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:04:22.652+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
+2025-04-14T16:04:22.768+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:04:22.771+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:04:28.910+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 3 and quantity 3 to the cart
+2025-04-14T16:04:28.963+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:04:28.964+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:04:34.146+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Updating product using Id 3 and quantity 5 in the cart
+2025-04-14T16:04:34.165+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:04:34.166+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:04:37.562+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Removing product using Id 1 from the cart
+2025-04-14T16:04:37.571+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-9] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:04:37.572+02:00  INFO 31028 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:05:50.417+02:00  INFO 31028 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T16:05:50.428+02:00  INFO 31028 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T16:05:50.433+02:00  INFO 31028 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T16:05:50.435+02:00  INFO 31028 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T16:05:50.447+02:00  INFO 31028 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-14T16:27:04.058+02:00  INFO 36080 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 36080 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-14T16:27:04.060+02:00  INFO 36080 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-14T16:27:04.781+02:00  INFO 36080 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-14T16:27:04.852+02:00  INFO 36080 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2025-04-14T16:27:05.412+02:00  INFO 36080 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-14T16:27:05.427+02:00  INFO 36080 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-14T16:27:05.427+02:00  INFO 36080 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-14T16:27:05.485+02:00  INFO 36080 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-14T16:27:05.486+02:00  INFO 36080 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1382 ms
+2025-04-14T16:27:05.673+02:00  INFO 36080 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-14T16:27:05.730+02:00  INFO 36080 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-14T16:27:05.759+02:00  INFO 36080 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-14T16:27:06.045+02:00  INFO 36080 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-14T16:27:06.077+02:00  INFO 36080 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-14T16:27:06.428+02:00  INFO 36080 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c0dca15
+2025-04-14T16:27:06.431+02:00  INFO 36080 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-14T16:27:06.506+02:00  INFO 36080 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-14T16:27:07.344+02:00  INFO 36080 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-14T16:27:07.347+02:00  INFO 36080 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T16:27:07.630+02:00  WARN 36080 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-14T16:27:07.647+02:00  INFO 36080 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-14T16:27:07.970+02:00  INFO 36080 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-14T16:27:07.978+02:00  INFO 36080 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 4.504 seconds (process running for 5.252)
+2025-04-14T16:27:17.200+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-14T16:27:17.200+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-14T16:27:17.201+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-14T16:27:17.246+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:17.246+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:27:20.473+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='fee'
+2025-04-14T16:27:20.474+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Searching products with keyword 'fee'
+2025-04-14T16:27:24.914+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 4 to the cart
+2025-04-14T16:27:24.963+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:24.964+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:27:37.002+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 2 and quantity 2 to the cart
+2025-04-14T16:27:37.034+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:37.034+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:27:43.713+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 3 to the cart
+2025-04-14T16:27:43.729+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:43.730+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:27:49.781+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Updating product using Id 5 and quantity 5 in the cart
+2025-04-14T16:27:49.799+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:49.799+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:27:54.227+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Removing product using Id 5 from the cart
+2025-04-14T16:27:54.238+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-14T16:27:54.238+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-14T16:28:02.315+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='ea'
+2025-04-14T16:28:02.316+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Searching products with keyword 'ea'
+2025-04-14T16:28:04.627+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='e'
+2025-04-14T16:28:04.627+02:00  INFO 36080 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Searching products with keyword 'e'
+2025-04-14T16:28:32.127+02:00  INFO 36080 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-14T16:28:32.135+02:00  INFO 36080 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-14T16:28:32.138+02:00  INFO 36080 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-14T16:28:32.140+02:00  INFO 36080 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-14T16:28:32.151+02:00  INFO 36080 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

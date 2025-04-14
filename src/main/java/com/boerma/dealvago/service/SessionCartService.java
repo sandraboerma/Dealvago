@@ -2,7 +2,6 @@ package com.boerma.dealvago.service;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
-import com.boerma.dealvago.domain.entity.Product;
 import com.boerma.dealvago.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,9 +27,6 @@ public class SessionCartService {
 
     public void addOrderline(int productId, int quantity) {
         productRepository.findById(productId).ifPresentOrElse(product -> {
-                    if(modifyOrderline(productId, quantity, product)) {return;}
-
-                    int totalPrice = calculateOrderlinePrice(product, quantity);
                     ProductDto productDto = new ProductDto(
                             product.getId(),
                             product.getName(),
@@ -38,6 +34,11 @@ public class SessionCartService {
                             product.getStock()
                     );
 
+                    if (modifyOrderline(productId, quantity, productDto)) {
+                        return;
+                    }
+
+                    int totalPrice = calculateOrderlinePrice(productDto, quantity);
                     OrderlineDto newLine = new OrderlineDto(productDto, quantity, totalPrice);
                     cart.add(newLine);
                 }, () -> {
@@ -46,12 +47,25 @@ public class SessionCartService {
         );
     }
 
+    public void updateQuantity(int productId, int newQuantity) {
+        for (OrderlineDto orderline : cart) {
+            if (orderline.getProductDto().getId() == productId) {
+                if (newQuantity <= 0) {
+                    removeOrderline(productId);
+                } else {
+                    orderline.setQuantity(newQuantity);
+                    orderline.setTotalPrice(calculateOrderlinePrice(orderline.getProductDto(), newQuantity));
+                }
+            }
+        }
+    }
+
     public void removeOrderline(int productId) {
-        cart.removeIf(orderLine -> orderLine.getProduct().getId() == productId);
+        cart.removeIf(orderline -> orderline.getProductDto().getId() == productId);
     }
 
 
-    public int calculateOrderlinePrice(Product product, int quantity) {
+    public int calculateOrderlinePrice(ProductDto product, int quantity) {
         return product.getUnitPrice() * quantity;
     }
 
@@ -75,12 +89,12 @@ public class SessionCartService {
         cart.clear();
     }
 
-    private boolean modifyOrderline(int productId, int quantity, Product product) {
+    private boolean modifyOrderline(int productId, int quantity, ProductDto productDto) {
         for (OrderlineDto existingItem : cart) {
-            if (existingItem.getProduct().getId() == productId) {
+            if (existingItem.getProductDto().getId() == productId) {
                 int updateQuantity = existingItem.getQuantity() + quantity;
                 existingItem.setQuantity(updateQuantity);
-                existingItem.setTotalPrice(calculateOrderlinePrice(product, updateQuantity));
+                existingItem.setTotalPrice(calculateOrderlinePrice(productDto, updateQuantity));
                 return true;
             }
         }

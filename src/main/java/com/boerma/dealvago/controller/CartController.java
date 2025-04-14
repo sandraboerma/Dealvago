@@ -24,4 +24,19 @@ public class CartController {
         sessionCartService.addOrderline(productId, quantity);
         return "redirect:/products";
     }
+
+    @PostMapping("/cart/update")
+    public String updateCart(@RequestParam("productId") int productId,
+                             @RequestParam("quantity") int quantity) {
+        logger.info("Updating product using Id {} and quantity {} in the cart", productId, quantity);
+        sessionCartService.updateQuantity(productId, quantity);
+        return "redirect:/products";
+    }
+
+    @PostMapping("/cart/remove")
+    public String removeFromCart(@RequestParam("productId") int productId) {
+        logger.info("Removing product using Id {} from the cart", productId);
+        sessionCartService.removeOrderline(productId);
+        return "redirect:/products";
+    }
 }

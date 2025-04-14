@@ -1,12 +1,12 @@
 package com.boerma.dealvago.domain.dto;
 
 public class OrderlineDto {
-    private ProductDto product;
+    private ProductDto productDto;
     private int quantity;
     private int totalPrice;
 
-    public OrderlineDto(ProductDto product, int quantity, int totalPrice) {
-        this.product = product;
+    public OrderlineDto(ProductDto productDto, int quantity, int totalPrice) {
+        this.productDto = productDto;
         this.quantity = quantity;
         this.totalPrice = totalPrice;
     }
@@ -14,8 +14,8 @@ public class OrderlineDto {
     public OrderlineDto() {
     }
 
-    public ProductDto getProduct() {
-        return product;
+    public ProductDto getProductDto() {
+        return productDto;
     }
 
     public int getQuantity() {

@@ -49,10 +49,24 @@
     </thead>
     <tbody>
     <tr th:each="item : ${cart}">
-        <td th:text="${item.product.name}">Product Name</td>
-        <td th:text="${item.product.unitPrice}">Product Price</td>
-        <td th:text="${item.quantity}">Qty</td>
+        <td th:text="${item.productDto.name}">Product Name</td>
+        <td th:text="${item.productDto.unitPrice}">Product Price</td>
+        <td>
+            <form action="/cart/update" method="post" style="display: inline;">
+                <input type="hidden" name="productId" th:value="${item.productDto.id}" />
+                <input type="number" name="quantity" min="0" th:attr="max=${item.productDto.stock}"
+                       th:value="${item.quantity}" style="width: 50px;"/>
+                <button type="submit">Update</button>
+            </form>
+        </td>
         <td th:text="${item.totalPrice}">Subtotal</td>
+        <td>
+            <form action="/cart/remove" method="post" style="display: inline;">
+                <input type="hidden" name="productId" th:value="${item.productDto.id}" />
+                <button type="submit">Remove</button>
+            </form>
+        </td>
+
     </tr>
     </tbody>
 </table>

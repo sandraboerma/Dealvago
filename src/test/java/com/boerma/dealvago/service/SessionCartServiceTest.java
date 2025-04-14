@@ -1,5 +1,6 @@
 package com.boerma.dealvago.service;
 
+import com.boerma.dealvago.domain.dto.ProductDto;
 import com.boerma.dealvago.domain.entity.Product;
 import com.boerma.dealvago.repository.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,7 +29,7 @@ class SessionCartServiceTest {
     void addOrderline() {
         sessionCartService.addOrderline(3, 2);
         assertEquals(1, sessionCartService.size());
-        assertEquals(3, sessionCartService.getOrderlines().get(0).getProduct().getId());
+        assertEquals(3, sessionCartService.getOrderlines().get(0).getProductDto().getId());
     }
 
     @Test
@@ -41,8 +42,8 @@ class SessionCartServiceTest {
 
     @Test
     void calculateOrderlinePrice() {
-        Product product = new Product(7, "sample2", 18, 10);
-        assertEquals(36, sessionCartService.calculateOrderlinePrice(product,2));
+        ProductDto productDto = new ProductDto(7, "sample2", 18, 10);
+        assertEquals(36, sessionCartService.calculateOrderlinePrice(productDto,2));
     }
 
     @Test
