@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>Dealvago - shop now and regret later!</title>
+    <meta charset="UTF-8">
+    <title>Dealvago - shop now and regret later!</title>
 </head>
 <body>
-  <h2>Welcome to Dealvago! </h2>
+<h2>Welcome to Dealvago! </h2>
 
-  <form method="get" action="/products">
-    <input type="text" name="search" placeholder="Search products..." />
+<form method="get" action="/products">
+    <input type="text" name="search" placeholder="Search products..."/>
     <button type="submit">Search</button>
-  </form>
+</form>
 
-  <h3>Products</h3>
-  <table>
+<h3>Products</h3>
+<table>
     <tr>
-      <th>Product</th>
-      <th>Price</th>
-      <th>Quantity</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
     </tr>
     <tr th:each="product : ${products}">
         <td th:text="${product.name}">Name</td>
         <td th:text="${product.unitPrice}">Price</td>
         <td th:text="${product.stock}">Stock</td>
+        <td>
+            <form action="/cart/add" method="post">
+                <input type="hidden" name="productId" th:value="${product.id}"/>
+                <select name="quantity">
+                    <option th:each="i: ${#numbers.sequence(1, product.stock)}" th:value="${i}" th:text="${i}"></option>
+                </select>
+                <button type="submit">Add to Cart</button>
+            </form>
+        </td>
     </tr>
-  </table>
+</table>
 
-<!--
+<hr/>
 
-<form method="post" action="/customerform">
-  <input name="city" type="text" size="14" value=""/>
-  <input name="submit" type="submit" value="Enter"/>
-</form>
+<h3>Shopping Cart</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${cart}">
+        <td th:text="${item.product.name}">Product Name</td>
+        <td th:text="${item.product.unitPrice}">Product Price</td>
+        <td th:text="${item.quantity}">Qty</td>
+        <td th:text="${item.totalPrice}">Subtotal</td>
+    </tr>
+    </tbody>
+</table>
 
-<p>The country is: </p>
-<p th:text="${cityname}"/>
-
--->
+<p><strong>Total: </strong><span th:text="${totalPrice}">0</span> kr</p>
 
 </body>
 </html>

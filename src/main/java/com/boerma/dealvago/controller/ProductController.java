@@ -2,6 +2,7 @@ package com.boerma.dealvago.controller;
 
 import com.boerma.dealvago.domain.dto.ProductDto;
 import com.boerma.dealvago.service.InventoryService;
+import com.boerma.dealvago.service.SessionCartService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,9 +17,11 @@ public class ProductController {
 
     private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
     private final InventoryService inventoryService;
+    private final SessionCartService sessionCartService;
 
-    public ProductController(InventoryService inventoryService) {
+    public ProductController(InventoryService inventoryService, SessionCartService sessionCartService) {
         this.inventoryService = inventoryService;
+        this.sessionCartService = sessionCartService;
     }
 
     @GetMapping("/products")
@@ -32,6 +35,8 @@ public class ProductController {
         }
 
         model.addAttribute("products", products);
+        model.addAttribute("cart", sessionCartService.getOrderlines());
+        model.addAttribute("totalPrice", sessionCartService.calculateTotalPrice());
         return "customerform";
     }
 
