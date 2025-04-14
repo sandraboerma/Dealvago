@@ -27,8 +27,9 @@ public class SessionCartService {
     }
 
     public void addOrderline(int productId, int quantity) {
-        productRepository.findById(productId).ifPresentOrElse(
-                product -> {
+        productRepository.findById(productId).ifPresentOrElse(product -> {
+                    if(modifyOrderline(productId, quantity, product)) {return;}
+
                     int totalPrice = calculateOrderlinePrice(product, quantity);
                     ProductDto productDto = new ProductDto(
                             product.getId(),
@@ -36,16 +37,13 @@ public class SessionCartService {
                             product.getUnitPrice(),
                             product.getStock()
                     );
+
                     OrderlineDto newLine = new OrderlineDto(productDto, quantity, totalPrice);
                     cart.add(newLine);
                 }, () -> {
                     System.out.println("Product not found");
                 }
         );
-    }
-
-    public void modifyOrderline() {
-
     }
 
     public void removeOrderline(int productId) {
@@ -75,6 +73,18 @@ public class SessionCartService {
 
     public void clear() {
         cart.clear();
+    }
+
+    private boolean modifyOrderline(int productId, int quantity, Product product) {
+        for (OrderlineDto existingItem : cart) {
+            if (existingItem.getProduct().getId() == productId) {
+                int updateQuantity = existingItem.getQuantity() + quantity;
+                existingItem.setQuantity(updateQuantity);
+                existingItem.setTotalPrice(calculateOrderlinePrice(product, updateQuantity));
+                return true;
+            }
+        }
+        return false;
     }
 
 }
