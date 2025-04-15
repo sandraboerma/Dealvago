@@ -10,9 +10,6 @@ public class Orderline {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne
-    @JoinColumn(name = "order_id", nullable = false)
-    private OrderDetail orderDetail;
 
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)
@@ -28,8 +25,7 @@ public class Orderline {
 
     }
 
-    public Orderline(OrderDetail orderDetail, Product product, int quantity, int productPrice) {
-        this.orderDetail = orderDetail;
+    public Orderline(Product product, int quantity, int productPrice) {
         this.product = product;
         this.quantity = quantity;
         this.productPrice = productPrice;
@@ -41,14 +37,6 @@ public class Orderline {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public OrderDetail getOrderDetail() {
-        return orderDetail;
-    }
-
-    public void setOrderDetail(OrderDetail orderDetail) {
-        this.orderDetail = orderDetail;
     }
 
     public Product getProduct() {
@@ -79,7 +67,6 @@ public class Orderline {
     public String toString() {
         return "Orderline{" +
                 "id=" + id +
-                ", orderDetail=" + orderDetail +
                 ", product=" + product +
                 ", quantity=" + quantity +
                 ", productPrice=" + productPrice +

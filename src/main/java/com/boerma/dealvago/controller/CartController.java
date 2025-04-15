@@ -39,4 +39,11 @@ public class CartController {
         sessionCartService.removeOrderline(productId);
         return "redirect:/products";
     }
+
+    @PostMapping("/cart/checkout")
+    public String checkout() {
+        logger.info("Checking out the cart");
+        sessionCartService.checkout();
+        return "redirect:/products";
+    }
 }

@@ -24,7 +24,7 @@ public class OrderDetail {
     @Column(name = "order_status", nullable = false)
     private String orderStatus;
 
-    @OneToMany(mappedBy = "orderDetail", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Orderline> orderlines = new ArrayList<>();
 
     public OrderDetail() {
@@ -73,7 +73,7 @@ public class OrderDetail {
         return orderlines;
     }
 
-    public void setOrderLines(List<Orderline> orderlines) {
+    public void setOrderlines(List<Orderline> orderlines) {
         this.orderlines = orderlines;
     }
 

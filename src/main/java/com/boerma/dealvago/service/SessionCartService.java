@@ -2,6 +2,7 @@ package com.boerma.dealvago.service;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
+import com.boerma.dealvago.domain.entity.User;
 import com.boerma.dealvago.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,11 @@ public class SessionCartService {
     private static final Logger logger = LoggerFactory.getLogger(SessionCartService.class);
     ProductRepository productRepository;
     List<OrderlineDto> cart = new ArrayList();
+
+    @Autowired
+    OrderService orderService;
+
+    User user;
 
     @Autowired
     public SessionCartService(ProductRepository productRepository) {
@@ -101,4 +107,7 @@ public class SessionCartService {
         return false;
     }
 
+    public void checkout() {
+        orderService.createOrder(cart);
+    }
 }
