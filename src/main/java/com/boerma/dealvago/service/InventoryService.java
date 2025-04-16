@@ -20,6 +20,15 @@ public class InventoryService {
         this.productRepository = productRepository;
     }
 
+    public void addProduct(ProductDto productDto) {
+        logger.info("Adding new product: {}", productDto);
+        Product product = new Product();
+        product.setName(productDto.getName());
+        product.setUnitPrice(productDto.getUnitPrice());
+        product.setStock(productDto.getStock());
+        productRepository.save(product);
+    }
+
     public List<ProductDto> getAllProducts() {
         logger.info("Fetching all products — no search term provided");
         List<Product> products = productRepository.findAll();
@@ -50,4 +59,14 @@ public class InventoryService {
         return productDtos;
     }
 
+    public void updateProductStock(int productId, int quantity) {
+        productRepository.findById(productId).ifPresentOrElse(product -> {
+            int updatedStock = product.getStock() + quantity;
+            product.setStock(updatedStock);
+            productRepository.save(product);
+            logger.info("Updated stock for product ID {}: added {} to stock", productId, quantity);
+        }, () -> {
+            logger.warn("Product with ID {} not found", productId);
+        });
+    }
 }

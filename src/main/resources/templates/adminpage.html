@@ -18,17 +18,46 @@
     </p>
 
 <div th:if="${view} == 'products'">
+    <hr/>
     <h3>Manage Products</h3>
+
+    <h4>Add new product</h4>
     <form method="post" action="/admin/products/add">
         <label>Name: <input type="text" name="name" /></label><br/>
         <label>Price: <input type="number" name="unitPrice" /></label><br/>
         <label>Stock: <input type="number" name="stock" /></label><br/>
         <button type="submit">Add Product</button>
     </form>
+
+    <h4>Available products</h4>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tr th:each="product : ${products}">
+            <td th:text="${product.name}">Name</td>
+            <td th:text="${product.unitPrice}">Price</td>
+            <td th:text="${product.stock}">Stock</td>
+            <td>
+                <form method="post" action="/admin/products/update">
+                    <input type="hidden" name="productId" th:value="${product.id}" />
+                    <select name="quantity">
+                        <option th:each="i : ${#numbers.sequence(1, 10)}"
+                                th:value="${i}"
+                                th:text="${i}">1</option>
+                    </select>
+                    <button type="submit">Add to Stock</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
 </div>
 
 <div th:if="${view} == 'orders'">
-    <h3>View Orders</h3>
+    <h3>Manage Orders</h3>
     <!--
     <table>
         <thead>
@@ -47,6 +76,8 @@
         </tbody>
     </table>
     -->
+
+</div>
 
 </body>
 </html>
