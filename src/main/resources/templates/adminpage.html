@@ -77,9 +77,11 @@
             <td th:text="${order.orderDate}">Order Date</td>
             <td th:text="${order.orderStatus}">Status</td>
             <td>
-                <form method="get" th:action="@{'/admin/orders/' + ${order.id}}">
+                <form method="get" action="/admin/orders/view">
+                    <input type="hidden" name="orderId" th:value="${order.id}" />
                     <button type="submit">View Order</button>
                 </form>
+
             </td>
         </tr>
         </tbody>

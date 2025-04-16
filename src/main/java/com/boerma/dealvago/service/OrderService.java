@@ -52,4 +52,17 @@ public class OrderService {
     public List<OrderDetail> getAllOrders() {
         return orderDetailRepository.findAll();
     }
+
+    public OrderDetail getOrderById(int orderId) {
+        return orderDetailRepository.findById(orderId).orElse(null);
+    }
+
+    public int getOrderValue(OrderDetail order) {
+        int total = 0;
+        for (Orderline line : order.getOrderlines()) {
+            total += line.getProductPrice() * line.getQuantity();
+        }
+        return total;
+    }
+
 }

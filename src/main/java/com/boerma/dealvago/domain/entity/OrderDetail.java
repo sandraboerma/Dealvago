@@ -69,7 +69,7 @@ public class OrderDetail {
         this.orderStatus = orderStatus;
     }
 
-    public List<Orderline> getOrderLines() {
+    public List<Orderline> getOrderlines() {
         return orderlines;
     }
 

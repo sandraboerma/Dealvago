@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -44,5 +45,12 @@ public class AdminController {
     public String updateProduct(int productId, int quantity) {
         inventoryService.updateProductStock(productId, quantity);
         return "redirect:/admin?view=products";
+    }
+
+    @GetMapping("/admin/orders/view")
+    public String viewOrder(@RequestParam("orderId") Integer orderId, Model model) {
+        model.addAttribute("order", orderService.getOrderById(orderId));
+        model.addAttribute("orderValue", orderService.getOrderValue(orderService.getOrderById(orderId)));
+        return "adminorderviewpage";
     }
 }

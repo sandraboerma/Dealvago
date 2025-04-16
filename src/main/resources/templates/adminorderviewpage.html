@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Detail</title>
+
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Order Detail – Order #<span th:text="${order.id}"></span></h2>
+
+<p>
+    <strong>Customer Name:</strong> <span th:text="${order.customer.username}"></span><br/>
+    <strong>Order Date:</strong> <span th:text="${order.orderDate}"></span><br/>
+    <strong>Order Status:</strong> <span th:text="${order.orderStatus}"></span>
+</p>
+
+<h3>Items</h3>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr th:each="item : ${order.orderlines}">
+        <td th:text="${item.product.name}"></td>
+        <td th:text="${item.quantity}"></td>
+        <td th:text="${item.product.unitPrice}"></td>
+        <td th:text="${item.product.unitPrice * item.quantity}"></td>
+    </tr>
+</table>
+
+<p><strong>Total:</strong> <span th:text="${orderValue}">0</span> kr</p>
+
+<div th:if="${order.orderStatus == 'Pending'}">
+    <form method="post" th:action="@{/admin/orders/{orderId}/ship(orderId=${order.id})}">
+        <button type="submit">Ship Order</button>
+    </form>
+</div>
+
+<a th:href="@{/admin(view='orders')}">← Back to Orders</a>
+
+</body>
+</html>
