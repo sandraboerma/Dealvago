@@ -14,7 +14,7 @@ public class User {
     private int id;
 
     @Column(nullable = false)
-    private String name;
+    private String username;
 
     @Column(nullable = false, unique = true)
     private String email;
@@ -31,12 +31,18 @@ public class User {
 
     }
 
-    public User(int id, String name, String email, String password, boolean isAdmin) {
+    public User(int id, String username, String email, String password, boolean isAdmin) {
         this.id = id;
-        this.name = name;
+        this.username = username;
         this.email = email;
         this.password = password;
         this.isAdmin = isAdmin;
+    }
+
+    public User(String username, String password, String email, boolean isAdmin) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 
     public int getId() {
@@ -48,11 +54,11 @@ public class User {
     }
 
     public String getName() {
-        return name;
+        return username;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.username = name;
     }
 
     public String getEmail() {
@@ -91,7 +97,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", isAdmin=" + isAdmin +

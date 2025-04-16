@@ -24,8 +24,6 @@ public class SessionCartService {
     @Autowired
     OrderService orderService;
 
-    User user;
-
     @Autowired
     public SessionCartService(ProductRepository productRepository) {
         this.productRepository = productRepository;
@@ -48,7 +46,7 @@ public class SessionCartService {
                     OrderlineDto newLine = new OrderlineDto(productDto, quantity, totalPrice);
                     cart.add(newLine);
                 }, () -> {
-                    System.out.println("Product not found");
+                    logger.info("Product not found");
                 }
         );
     }
@@ -91,6 +89,11 @@ public class SessionCartService {
         return new ArrayList<>(cart);
     }
 
+    public void checkout() {
+        orderService.createOrder(cart);
+        cart.clear();
+    }
+
     public void clear() {
         cart.clear();
     }
@@ -105,9 +108,5 @@ public class SessionCartService {
             }
         }
         return false;
-    }
-
-    public void checkout() {
-        orderService.createOrder(cart);
     }
 }
