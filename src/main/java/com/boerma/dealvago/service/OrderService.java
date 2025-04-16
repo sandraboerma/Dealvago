@@ -49,4 +49,7 @@ public class OrderService {
         orderDetailRepository.save(order);
     }
 
+    public List<OrderDetail> getAllOrders() {
+        return orderDetailRepository.findAll();
+    }
 }

@@ -2,6 +2,7 @@ package com.boerma.dealvago.controller;
 
 import com.boerma.dealvago.domain.dto.ProductDto;
 import com.boerma.dealvago.service.InventoryService;
+import com.boerma.dealvago.service.OrderService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +14,11 @@ import java.util.List;
 public class AdminController {
 
     private final InventoryService inventoryService;
+    private final OrderService orderService;
 
-    public AdminController(InventoryService inventoryService) {
+    public AdminController(InventoryService inventoryService, OrderService orderService) {
         this.inventoryService = inventoryService;
+        this.orderService = orderService;
     }
 
     @GetMapping("/admin")
@@ -23,8 +26,9 @@ public class AdminController {
         model.addAttribute("view", view);
 
         if ("products".equals(view)) {
-            List<ProductDto> products = inventoryService.getAllProducts();
-            model.addAttribute("products", products);
+            model.addAttribute("products", inventoryService.getAllProducts());
+        } else {
+            model.addAttribute("orders", orderService.getAllOrders());
         }
 
         return "adminpage";

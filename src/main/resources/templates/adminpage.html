@@ -58,24 +58,32 @@
 
 <div th:if="${view} == 'orders'">
     <h3>Manage Orders</h3>
-    <!--
+    <hr/>
+
     <table>
         <thead>
         <tr>
             <th>Order ID</th>
-            <th>Total Price</th>
+            <th>Customer</th>
+            <th>Order Date</th>
             <th>Status</th>
+
         </tr>
         </thead>
         <tbody>
         <tr th:each="order : ${orders}">
-            <td th:text="${order.id}">Order ID</td>
-            <td th:text="${order.totalPrice}">Total Price</td>
-            <td th:text="${order.status}">Status</td>
+            <td th:text="${order.id}">Order Id</td>
+            <td th:text="${order.customer.username}">Customer</td>
+            <td th:text="${order.orderDate}">Order Date</td>
+            <td th:text="${order.orderStatus}">Status</td>
+            <td>
+                <form method="get" th:action="@{'/admin/orders/' + ${order.id}}">
+                    <button type="submit">View Order</button>
+                </form>
+            </td>
         </tr>
         </tbody>
     </table>
-    -->
 
 </div>
 
