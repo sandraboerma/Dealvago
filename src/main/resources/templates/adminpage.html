@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Dealvago - Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h2>Dealvago - Admin Dashboard</h2>
+    <p>
+        <a th:href="@{/admin(view='products')}">Manage Products</a>
+        &nbsp;|&nbsp;
+        <a th:href="@{/admin(view='orders')}">View Orders</a>
+    </p>
+
+<div th:if="${view} == 'products'">
+    <h3>Manage Products</h3>
+    <form method="post" action="/admin/products/add">
+        <label>Name: <input type="text" name="name" /></label><br/>
+        <label>Price: <input type="number" name="unitPrice" /></label><br/>
+        <label>Stock: <input type="number" name="stock" /></label><br/>
+        <button type="submit">Add Product</button>
+    </form>
+</div>
+
+<div th:if="${view} == 'orders'">
+    <h3>View Orders</h3>
+    <!--
+    <table>
+        <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Total Price</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.id}">Order ID</td>
+            <td th:text="${order.totalPrice}">Total Price</td>
+            <td th:text="${order.status}">Status</td>
+        </tr>
+        </tbody>
+    </table>
+    -->
+
 </body>
 </html>
