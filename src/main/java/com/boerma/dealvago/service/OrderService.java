@@ -60,9 +60,16 @@ public class OrderService {
     public int getOrderValue(OrderDetail order) {
         int total = 0;
         for (Orderline line : order.getOrderlines()) {
-            total += line.getProductPrice() * line.getQuantity();
+            total += line.getProductPrice();
         }
         return total;
+    }
+
+    public void updateOrderStatus(int orderId) {
+        orderDetailRepository.findById(orderId).ifPresent(order -> {
+            order.setOrderStatus("Shipped");
+            orderDetailRepository.save(order);
+        });
     }
 
 }

@@ -33,14 +33,15 @@
         <td th:text="${item.product.name}"></td>
         <td th:text="${item.quantity}"></td>
         <td th:text="${item.product.unitPrice}"></td>
-        <td th:text="${item.product.unitPrice * item.quantity}"></td>
+        <td th:text="${item.productPrice}"></td>
     </tr>
 </table>
 
 <p><strong>Total:</strong> <span th:text="${orderValue}">0</span> kr</p>
 
 <div th:if="${order.orderStatus == 'Pending'}">
-    <form method="post" th:action="@{/admin/orders/{orderId}/ship(orderId=${order.id})}">
+    <form method="post" action="/admin/orders/update">
+        <input type="hidden" name="orderId" th:value="${order.id}" />
         <button type="submit">Ship Order</button>
     </form>
 </div>
