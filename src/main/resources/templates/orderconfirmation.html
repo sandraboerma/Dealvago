@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+<body>
+<h2>Thank you for choosing Dealvago!</h2>
+<p>Your order has been placed successfully. Please review the details:</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Subtotal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${confirmedOrder}">
+        <td th:text="${item.productDto.name}">Name</td>
+        <td th:text="${item.productDto.unitPrice}">Price</td>
+        <td th:text="${item.quantity}">Qty</td>
+        <td th:text="${item.totalPrice}">Subtotal</td>
+    </tr>
+    </tbody>
+</table>
+
+<p><strong>Total: </strong><span th:text="${totalPrice}">0</span> kr</p>
+
+<a href="/products">Make another purchase!</a>
+</body>
+</html>

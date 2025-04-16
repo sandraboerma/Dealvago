@@ -18,7 +18,7 @@ import java.util.List;
 public class SessionCartService {
 
     private static final Logger logger = LoggerFactory.getLogger(SessionCartService.class);
-    ProductRepository productRepository;
+    private final ProductRepository productRepository;
     List<OrderlineDto> cart = new ArrayList();
 
     @Autowired
@@ -89,9 +89,8 @@ public class SessionCartService {
         return new ArrayList<>(cart);
     }
 
-    public void checkout() {
-        orderService.createOrder(cart);
-        cart.clear();
+    public void checkout(Integer userId) {
+        orderService.createOrder(cart, userId);
     }
 
     public void clear() {

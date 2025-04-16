@@ -3,7 +3,6 @@ package com.boerma.dealvago.service;
 import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.entity.OrderDetail;
 import com.boerma.dealvago.domain.entity.Orderline;
-import com.boerma.dealvago.domain.entity.User;
 import com.boerma.dealvago.repository.OrderDetailRepository;
 import com.boerma.dealvago.repository.ProductRepository;
 import com.boerma.dealvago.repository.UserRepository;
@@ -17,17 +16,20 @@ import java.util.List;
 @Service
 public class OrderService {
 
-    @Autowired
     private OrderDetailRepository orderDetailRepository;
-
-    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
     private ProductRepository productRepository;
 
-    public void createOrder(List<OrderlineDto> orderlineDtos) {
+    @Autowired
+    public OrderService(OrderDetailRepository orderDetailRepository,
+                        UserRepository userRepository,
+                        ProductRepository productRepository) {
+        this.orderDetailRepository = orderDetailRepository;
+        this.userRepository = userRepository;
+        this.productRepository = productRepository;
+    }
 
+    public void createOrder(List<OrderlineDto> orderlineDtos, Integer userId) {
 
         List<Orderline> itemList = new ArrayList<>();
         for (OrderlineDto dto : orderlineDtos) {
@@ -38,11 +40,9 @@ public class OrderService {
             itemList.add(orderline);
         }
 
-        User user = userRepository.findById(1).get();
-
         OrderDetail order = new OrderDetail();
         order.setOrderlines(itemList);
-        order.setCustomer(user);
+        order.setCustomer(userRepository.findById(userId).get());
         order.setOrderDate(LocalDate.now());
         order.setOrderStatus("Pending");
 
