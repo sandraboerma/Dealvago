@@ -37,7 +37,7 @@ public class ProductController {
         model.addAttribute("products", products);
         model.addAttribute("cart", sessionCartService.getOrderlines());
         model.addAttribute("totalPrice", sessionCartService.calculateTotalPrice());
-        return "customerform";
+        return "customerpage";
     }
 
 

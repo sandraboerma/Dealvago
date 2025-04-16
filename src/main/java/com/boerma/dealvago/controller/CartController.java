@@ -54,6 +54,6 @@ public class CartController {
 
         sessionCartService.clear();
 
-        return "orderconfirmation";
+        return "orderconfirmationpage";
     }
 }
