@@ -2,7 +2,6 @@ package com.boerma.dealvago.service;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
-import com.boerma.dealvago.domain.entity.User;
 import com.boerma.dealvago.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,15 +50,12 @@ public class SessionCartService {
         );
     }
 
-    public void updateQuantity(int productId, int newQuantity) {
+    public void addCartItemQuantity(int productId, int addQuantity) {
         for (OrderlineDto orderline : cart) {
             if (orderline.getProductDto().getId() == productId) {
-                if (newQuantity <= 0) {
-                    removeOrderline(productId);
-                } else {
-                    orderline.setQuantity(newQuantity);
-                    orderline.setTotalPrice(calculateOrderlinePrice(orderline.getProductDto(), newQuantity));
-                }
+                int updateQuantity = orderline.getQuantity() + addQuantity;
+                orderline.setQuantity(updateQuantity);
+                orderline.setTotalPrice(calculateOrderlinePrice(orderline.getProductDto(), updateQuantity));
             }
         }
     }

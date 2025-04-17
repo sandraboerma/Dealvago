@@ -51,15 +51,19 @@
     <tr th:each="item : ${cart}">
         <td th:text="${item.productDto.name}">Product Name</td>
         <td th:text="${item.productDto.unitPrice}">Product Price</td>
+        <td th:text="${item.quantity}">Quantity</td>
+        <td th:text="${item.totalPrice}">Subtotal</td>
+
         <td>
             <form action="/cart/update" method="post" style="display: inline;">
                 <input type="hidden" name="productId" th:value="${item.productDto.id}" />
-                <input type="number" name="quantity" min="0" th:attr="max=${item.productDto.stock}"
-                       th:value="${item.quantity}" style="width: 50px;"/>
-                <button type="submit">Update</button>
+                <select name="quantity">
+                    <option th:each="i : ${#numbers.sequence(1, 10)}" th:value="${i}" th:text="${i}"></option>
+                </select>
+                <button type="submit">Add More</button>
             </form>
         </td>
-        <td th:text="${item.totalPrice}">Subtotal</td>
+
         <td>
             <form action="/cart/remove" method="post" style="display: inline;">
                 <input type="hidden" name="productId" th:value="${item.productDto.id}" />

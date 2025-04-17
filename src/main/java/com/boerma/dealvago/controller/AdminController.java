@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
-
 @Controller
 public class AdminController {
 
@@ -52,5 +50,11 @@ public class AdminController {
         model.addAttribute("order", orderService.getOrderById(orderId));
         model.addAttribute("orderValue", orderService.getOrderValue(orderService.getOrderById(orderId)));
         return "adminorderviewpage";
+    }
+
+    @PostMapping("admin/orders/update")
+    public String shipOrder(@RequestParam("orderId") Integer orderId) {
+        orderService.updateOrderStatus(orderId);
+        return "redirect:/admin/orders/view?orderId=" + orderId;
     }
 }

@@ -31,7 +31,7 @@ public class CartController {
     @PostMapping("/cart/update")
     public String updateCart(int productId, int quantity) {
         logger.info("Updating product using Id {} and quantity {} in the cart", productId, quantity);
-        sessionCartService.updateQuantity(productId, quantity);
+        sessionCartService.addCartItemQuantity(productId, quantity);
         return "redirect:/products";
     }
 
