@@ -41,7 +41,7 @@ public class AdminController {
 
     @PostMapping("/admin/products/update")
     public String updateProduct(int productId, int quantity) {
-        inventoryService.updateProductStock(productId, quantity);
+        inventoryService.addProductStock(productId, quantity);
         return "redirect:/admin?view=products";
     }
 

@@ -1,5 +1,6 @@
 package com.boerma.dealvago.service;
 
+import com.boerma.dealvago.domain.dto.OrderlineDto;
 import com.boerma.dealvago.domain.dto.ProductDto;
 import com.boerma.dealvago.domain.entity.Product;
 import com.boerma.dealvago.repository.ProductRepository;
@@ -59,14 +60,24 @@ public class InventoryService {
         return productDtos;
     }
 
-    public void updateProductStock(int productId, int quantity) {
+    public void addProductStock(int productId, int quantity) {
         productRepository.findById(productId).ifPresentOrElse(product -> {
-            int updatedStock = product.getStock() + quantity;
-            product.setStock(updatedStock);
+            int addedStock = product.getStock() + quantity;
+            product.setStock(addedStock);
             productRepository.save(product);
             logger.info("Updated stock for product ID {}: added {} to stock", productId, quantity);
         }, () -> {
             logger.warn("Product with ID {} not found", productId);
         });
+    }
+
+    public void removeProductStock(List<OrderlineDto> soldProducts) {
+        for (OrderlineDto dto : soldProducts) {
+            productRepository.findById(dto.getProductDto().getId()).ifPresent(product -> {
+                int updatedStock = product.getStock() - dto.getQuantity();
+                product.setStock(updatedStock);
+                productRepository.save(product);
+            });
+        }
     }
 }

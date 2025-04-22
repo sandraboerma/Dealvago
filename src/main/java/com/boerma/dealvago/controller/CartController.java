@@ -1,6 +1,7 @@
 package com.boerma.dealvago.controller;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
+import com.boerma.dealvago.service.InventoryService;
 import com.boerma.dealvago.service.SessionCartService;
 import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
@@ -16,9 +17,11 @@ public class CartController {
 
     private static final Logger logger = LoggerFactory.getLogger(CartController.class);
     private SessionCartService sessionCartService;
+    private InventoryService inventoryService;
 
-    public CartController(SessionCartService sessionCartService) {
+    public CartController(SessionCartService sessionCartService, InventoryService inventoryService) {
         this.sessionCartService = sessionCartService;
+        this.inventoryService = inventoryService;
     }
 
     @PostMapping("/cart/add")
@@ -46,9 +49,9 @@ public class CartController {
     public String checkout(Model model, HttpSession session) {
         logger.info("Checking out the cart");
         Integer userId = (Integer) session.getAttribute("loggedInUser");
-        sessionCartService.checkout(userId);
-
         List<OrderlineDto> cartSnapshot = sessionCartService.getOrderlines();
+        sessionCartService.checkout(userId);
+        inventoryService.removeProductStock(cartSnapshot);
         model.addAttribute("confirmedOrder", cartSnapshot);
         model.addAttribute("totalPrice", sessionCartService.calculateTotalPrice());
 

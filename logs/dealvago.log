@@ -1,20 +1,20 @@
-2025-04-17T09:38:41.173+02:00  INFO 38332 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 38332 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T09:38:41.203+02:00  INFO 38332 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T09:38:44.703+02:00  INFO 38332 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T09:38:44.815+02:00  INFO 38332 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 3 JPA repository interfaces.
-2025-04-17T09:38:46.207+02:00  INFO 38332 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T09:38:46.250+02:00  INFO 38332 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T09:38:46.252+02:00  INFO 38332 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T09:38:46.407+02:00  INFO 38332 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T09:38:46.407+02:00  INFO 38332 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5025 ms
-2025-04-17T09:38:46.735+02:00  INFO 38332 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T09:38:46.868+02:00  INFO 38332 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T09:38:47.019+02:00  INFO 38332 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T09:38:47.685+02:00  INFO 38332 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T09:38:47.729+02:00  INFO 38332 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T09:38:49.175+02:00  INFO 38332 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@704c3bdf
-2025-04-17T09:38:49.184+02:00  INFO 38332 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T09:38:49.600+02:00  INFO 38332 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-04-22T11:03:19.759+02:00  INFO 36696 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 36696 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-22T11:03:19.765+02:00  INFO 36696 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-22T11:03:20.562+02:00  INFO 36696 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-22T11:03:20.631+02:00  INFO 36696 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-04-22T11:03:21.179+02:00  INFO 36696 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-22T11:03:21.197+02:00  INFO 36696 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-22T11:03:21.198+02:00  INFO 36696 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-22T11:03:21.257+02:00  INFO 36696 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-22T11:03:21.257+02:00  INFO 36696 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
+2025-04-22T11:03:21.398+02:00  INFO 36696 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-22T11:03:21.465+02:00  INFO 36696 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-22T11:03:21.494+02:00  INFO 36696 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-22T11:03:21.760+02:00  INFO 36696 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-22T11:03:21.786+02:00  INFO 36696 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-22T11:03:22.313+02:00  INFO 36696 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@714f1a44
+2025-04-22T11:03:22.316+02:00  INFO 36696 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-22T11:03:22.494+02:00  INFO 36696 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.40
@@ -22,118 +22,51 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-04-17T09:38:51.775+02:00  INFO 38332 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T09:38:51.779+02:00  INFO 38332 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:38:52.432+02:00  WARN 38332 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T09:38:52.471+02:00  INFO 38332 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T09:38:53.035+02:00  INFO 38332 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T09:38:53.051+02:00  INFO 38332 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 13.806 seconds (process running for 30.623)
-2025-04-17T09:39:17.619+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T09:39:17.619+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T09:39:17.621+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-04-17T09:40:30.699+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:40:30.700+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:40:41.713+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
-2025-04-17T09:40:41.853+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:40:41.855+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:40:49.578+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.controller.CartController   : Adding product using Id 7 and quantity 1 to the cart
-2025-04-17T09:40:49.608+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:40:49.609+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:40:59.334+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Adding product using Id 2 and quantity 1 to the cart
-2025-04-17T09:40:59.417+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:40:59.418+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:41:11.886+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Updating product using Id 2 and quantity 2 in the cart
-2025-04-17T09:41:11.956+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:41:11.957+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:41:15.366+02:00  INFO 38332 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Updating product using Id 2 and quantity 0 in the cart
-2025-04-17T09:41:15.400+02:00 ERROR 38332 --- [Dealvago] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.ConcurrentModificationException] with root cause
-
-java.util.ConcurrentModificationException: null
-	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095) ~[na:na]
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049) ~[na:na]
-	at addCartItemQuantity(SessionCartService.java:55) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:137) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.3.jar:6.2.3]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.3.jar:6.2.3]
-	at com.boerma.dealvago.service.SessionCartService$$SpringCGLIB$$0.updateQuantity(<generated>) ~[classes/:na]
-	at com.boerma.dealvago.controller.CartController.updateCart(CartController.java:34) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.36.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2025-04-17T09:42:24.987+02:00  INFO 38332 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T09:42:25.074+02:00  INFO 38332 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T09:42:25.094+02:00  INFO 38332 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:42:25.106+02:00  INFO 38332 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T09:42:25.149+02:00  INFO 38332 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T09:42:28.910+02:00  INFO 30776 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 30776 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T09:42:28.915+02:00  INFO 30776 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T09:42:30.017+02:00  INFO 30776 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T09:42:30.137+02:00  INFO 30776 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 3 JPA repository interfaces.
-2025-04-17T09:42:31.075+02:00  INFO 30776 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T09:42:31.090+02:00  INFO 30776 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T09:42:31.091+02:00  INFO 30776 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T09:42:31.168+02:00  INFO 30776 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T09:42:31.169+02:00  INFO 30776 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2148 ms
-2025-04-17T09:42:31.417+02:00  INFO 30776 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T09:42:31.480+02:00  INFO 30776 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T09:42:31.529+02:00  INFO 30776 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T09:42:32.014+02:00  INFO 30776 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T09:42:32.057+02:00  INFO 30776 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T09:42:32.641+02:00  INFO 30776 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d913116
-2025-04-17T09:42:32.646+02:00  INFO 30776 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T09:42:33.005+02:00  INFO 30776 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-04-22T11:03:23.408+02:00  INFO 36696 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-22T11:03:23.411+02:00  INFO 36696 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22T11:03:24.042+02:00  WARN 36696 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-22T11:03:24.102+02:00  INFO 36696 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-22T11:03:24.708+02:00  INFO 36696 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-22T11:03:24.714+02:00  INFO 36696 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 5.492 seconds (process running for 7.451)
+2025-04-22T11:03:29.543+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-22T11:03:29.544+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-22T11:03:29.545+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-22T11:03:37.924+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:03:37.925+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:03:45.174+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
+2025-04-22T11:03:45.218+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:03:45.218+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:03:49.523+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 6 and quantity 1 to the cart
+2025-04-22T11:03:49.573+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:03:49.574+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:03:55.176+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 12 and quantity 1 to the cart
+2025-04-22T11:03:55.212+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:03:55.213+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:04:18.657+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Checking out the cart
+2025-04-22T11:04:23.377+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:04:23.378+02:00  INFO 36696 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:06:05.248+02:00  INFO 36696 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-22T11:06:05.254+02:00  INFO 36696 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-22T11:06:05.258+02:00  INFO 36696 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22T11:06:05.261+02:00  INFO 36696 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-22T11:06:05.281+02:00  INFO 36696 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-22T11:06:30.270+02:00  INFO 42120 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 42120 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
+2025-04-22T11:06:30.273+02:00  INFO 42120 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-04-22T11:06:30.759+02:00  INFO 42120 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-22T11:06:30.812+02:00  INFO 42120 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-04-22T11:06:31.144+02:00  INFO 42120 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-22T11:06:31.153+02:00  INFO 42120 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-22T11:06:31.153+02:00  INFO 42120 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-22T11:06:31.198+02:00  INFO 42120 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-22T11:06:31.198+02:00  INFO 42120 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 882 ms
+2025-04-22T11:06:31.369+02:00  INFO 42120 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-22T11:06:31.435+02:00  INFO 42120 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-04-22T11:06:31.478+02:00  INFO 42120 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-22T11:06:31.700+02:00  INFO 42120 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-22T11:06:31.722+02:00  INFO 42120 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-22T11:06:31.951+02:00  INFO 42120 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cd1ec54
+2025-04-22T11:06:31.952+02:00  INFO 42120 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-22T11:06:32.018+02:00  INFO 42120 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.40
@@ -141,321 +74,34 @@ java.util.ConcurrentModificationException: null
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-04-17T09:42:34.782+02:00  INFO 30776 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T09:42:34.791+02:00  INFO 30776 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:42:35.409+02:00  WARN 30776 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T09:42:35.445+02:00  INFO 30776 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T09:42:36.256+02:00  INFO 30776 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T09:42:36.327+02:00  INFO 30776 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 8.127 seconds (process running for 9.298)
-2025-04-17T09:42:53.472+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T09:42:53.473+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T09:42:53.479+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-04-17T09:42:54.420+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:42:54.421+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:43:02.615+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
-2025-04-17T09:43:02.684+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:43:02.684+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:43:05.058+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 1 to the cart
-2025-04-17T09:43:05.103+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:43:05.104+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:43:07.023+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Adding product using Id 5 and quantity 1 to the cart
-2025-04-17T09:43:07.099+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:43:07.101+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:43:10.525+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 8 and quantity 1 to the cart
-2025-04-17T09:43:10.560+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:43:10.561+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:43:40.490+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Updating product using Id 8 and quantity 2 in the cart
-2025-04-17T09:43:40.551+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:43:40.553+02:00  INFO 30776 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:49:52.706+02:00  INFO 30776 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T09:49:52.748+02:00  INFO 30776 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T09:49:52.757+02:00  INFO 30776 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:49:52.763+02:00  INFO 30776 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T09:49:52.784+02:00  INFO 30776 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T09:54:31.777+02:00  INFO 40328 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 40328 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T09:54:31.780+02:00  INFO 40328 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T09:54:32.843+02:00  INFO 40328 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T09:54:33.107+02:00  INFO 40328 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 3 JPA repository interfaces.
-2025-04-17T09:54:34.232+02:00  INFO 40328 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T09:54:34.274+02:00  INFO 40328 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T09:54:34.274+02:00  INFO 40328 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T09:54:34.404+02:00  INFO 40328 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T09:54:34.405+02:00  INFO 40328 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2556 ms
-2025-04-17T09:54:34.698+02:00  INFO 40328 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T09:54:34.836+02:00  INFO 40328 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T09:54:34.923+02:00  INFO 40328 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T09:54:35.655+02:00  INFO 40328 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T09:54:35.789+02:00  INFO 40328 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T09:54:36.822+02:00  INFO 40328 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d4d65f5
-2025-04-17T09:54:36.831+02:00  INFO 40328 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T09:54:37.240+02:00  INFO 40328 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.40
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-17T09:54:39.511+02:00  INFO 40328 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T09:54:39.519+02:00  INFO 40328 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:54:40.281+02:00  WARN 40328 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T09:54:40.306+02:00  INFO 40328 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T09:54:41.042+02:00  INFO 40328 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T09:54:41.056+02:00  INFO 40328 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 10.065 seconds (process running for 11.135)
-2025-04-17T09:54:58.328+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T09:54:58.330+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T09:54:58.333+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-04-17T09:54:59.473+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:54:59.474+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:03.742+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 1 to the cart
-2025-04-17T09:55:03.802+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:03.802+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:06.941+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Updating product using Id 1 and quantity 2 in the cart
-2025-04-17T09:55:07.008+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:07.011+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:15.530+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 13 and quantity 1 to the cart
-2025-04-17T09:55:15.558+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:15.559+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:18.105+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 1 in the cart
-2025-04-17T09:55:18.126+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:18.127+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:22.669+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 2 in the cart
-2025-04-17T09:55:22.734+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:22.737+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:26.355+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 1 in the cart
-2025-04-17T09:55:26.411+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:26.413+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:36.082+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 2 in the cart
-2025-04-17T09:55:36.148+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:36.149+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:38.268+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 2 in the cart
-2025-04-17T09:55:38.331+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-7] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:38.333+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:41.374+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 3 in the cart
-2025-04-17T09:55:41.461+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:41.462+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:55:45.025+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 2 in the cart
-2025-04-17T09:55:45.087+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:55:45.090+02:00  INFO 40328 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:56:41.161+02:00  INFO 40328 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T09:56:41.176+02:00  INFO 40328 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T09:56:41.183+02:00  INFO 40328 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:56:41.186+02:00  INFO 40328 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T09:56:41.201+02:00  INFO 40328 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T09:58:24.988+02:00  INFO 38944 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 38944 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T09:58:24.993+02:00  INFO 38944 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T09:58:26.185+02:00  INFO 38944 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T09:58:26.404+02:00  INFO 38944 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 3 JPA repository interfaces.
-2025-04-17T09:58:27.544+02:00  INFO 38944 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T09:58:27.563+02:00  INFO 38944 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T09:58:27.563+02:00  INFO 38944 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T09:58:27.636+02:00  INFO 38944 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T09:58:27.637+02:00  INFO 38944 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
-2025-04-17T09:58:28.099+02:00  INFO 38944 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T09:58:28.180+02:00  INFO 38944 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T09:58:28.228+02:00  INFO 38944 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T09:58:28.654+02:00  INFO 38944 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T09:58:28.784+02:00  INFO 38944 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T09:58:29.438+02:00  INFO 38944 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e606f64
-2025-04-17T09:58:29.441+02:00  INFO 38944 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T09:58:29.576+02:00  INFO 38944 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.40
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-17T09:58:31.612+02:00  INFO 38944 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T09:58:31.650+02:00  INFO 38944 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T09:58:32.481+02:00  WARN 38944 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T09:58:32.508+02:00  INFO 38944 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T09:58:33.588+02:00  INFO 38944 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T09:58:33.622+02:00  INFO 38944 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 9.459 seconds (process running for 10.494)
-2025-04-17T09:58:36.991+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T09:58:36.993+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T09:58:36.996+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-04-17T09:58:38.305+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:58:38.307+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:58:45.041+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 2 to the cart
-2025-04-17T09:58:45.123+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:58:45.124+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:58:47.438+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 9 and quantity 1 to the cart
-2025-04-17T09:58:47.505+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:58:47.508+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:58:52.277+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Updating product using Id 9 and quantity 1 in the cart
-2025-04-17T09:58:52.356+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-8] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:58:52.357+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:58:56.746+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Updating product using Id 9 and quantity 2 in the cart
-2025-04-17T09:58:56.796+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:58:56.798+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T09:59:05.952+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Updating product using Id 9 and quantity 4 in the cart
-2025-04-17T09:59:06.015+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T09:59:06.016+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:09:11.968+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Updating product using Id 9 and quantity 3 in the cart
-2025-04-17T10:09:12.035+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:09:12.037+02:00  INFO 38944 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:14:29.931+02:00  INFO 38944 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T10:14:29.951+02:00  INFO 38944 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T10:14:29.963+02:00  INFO 38944 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:14:29.971+02:00  INFO 38944 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T10:14:29.998+02:00  INFO 38944 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T10:15:46.083+02:00  INFO 38892 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 38892 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T10:15:46.085+02:00  INFO 38892 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T10:15:47.242+02:00  INFO 38892 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T10:15:47.333+02:00  INFO 38892 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
-2025-04-17T10:15:48.197+02:00  INFO 38892 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T10:15:48.231+02:00  INFO 38892 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T10:15:48.232+02:00  INFO 38892 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T10:15:48.483+02:00  INFO 38892 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T10:15:48.483+02:00  INFO 38892 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2314 ms
-2025-04-17T10:15:48.689+02:00  INFO 38892 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T10:15:48.767+02:00  INFO 38892 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T10:15:48.868+02:00  INFO 38892 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T10:15:49.505+02:00  INFO 38892 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T10:15:49.604+02:00  INFO 38892 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T10:15:50.177+02:00  INFO 38892 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c5c7cc4
-2025-04-17T10:15:50.180+02:00  INFO 38892 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T10:15:50.549+02:00  INFO 38892 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.40
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-17T10:15:52.347+02:00  INFO 38892 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T10:15:52.352+02:00  INFO 38892 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:15:52.993+02:00  WARN 38892 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T10:15:53.026+02:00  INFO 38892 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T10:15:53.841+02:00  INFO 38892 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T10:15:53.857+02:00  INFO 38892 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 8.525 seconds (process running for 9.636)
-2025-04-17T10:15:59.219+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T10:15:59.221+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T10:15:59.224+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-04-17T10:16:00.516+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:16:00.517+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:16:07.509+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 3 to the cart
-2025-04-17T10:16:07.582+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:16:07.583+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:16:09.429+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.controller.CartController   : Adding product using Id 7 and quantity 1 to the cart
-2025-04-17T10:16:09.487+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:16:09.487+02:00  INFO 38892 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:18:53.476+02:00  INFO 38892 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T10:18:53.495+02:00  INFO 38892 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T10:18:53.501+02:00  INFO 38892 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:18:53.504+02:00  INFO 38892 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T10:18:53.522+02:00  INFO 38892 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T10:18:57.239+02:00  INFO 39204 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 39204 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T10:18:57.242+02:00  INFO 39204 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T10:18:58.590+02:00  INFO 39204 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T10:18:58.684+02:00  INFO 39204 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
-2025-04-17T10:18:59.916+02:00  INFO 39204 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T10:18:59.933+02:00  INFO 39204 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T10:18:59.933+02:00  INFO 39204 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T10:19:00.093+02:00  INFO 39204 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T10:19:00.096+02:00  INFO 39204 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2779 ms
-2025-04-17T10:19:00.448+02:00  INFO 39204 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T10:19:00.576+02:00  INFO 39204 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T10:19:00.656+02:00  INFO 39204 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T10:19:01.189+02:00  INFO 39204 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T10:19:01.228+02:00  INFO 39204 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T10:19:01.811+02:00  INFO 39204 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26865b57
-2025-04-17T10:19:01.815+02:00  INFO 39204 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T10:19:02.051+02:00  INFO 39204 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.40
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-17T10:19:04.145+02:00  INFO 39204 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T10:19:04.169+02:00  INFO 39204 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:19:04.909+02:00  WARN 39204 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T10:19:04.954+02:00  INFO 39204 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T10:19:05.527+02:00  INFO 39204 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T10:19:05.537+02:00  INFO 39204 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 9.136 seconds (process running for 10.29)
-2025-04-17T10:19:12.735+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T10:19:12.735+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T10:19:12.737+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-04-17T10:19:13.199+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:13.202+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:19:18.898+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 1 and quantity 2 to the cart
-2025-04-17T10:19:18.961+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:18.962+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:19:24.450+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Adding product using Id 8 and quantity 4 to the cart
-2025-04-17T10:19:24.539+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:24.539+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:19:34.832+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Updating product using Id 1 and quantity 5 in the cart
-2025-04-17T10:19:34.848+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:34.848+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:19:48.019+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 13 and quantity 1 to the cart
-2025-04-17T10:19:48.057+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:48.058+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:19:58.569+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 1 in the cart
-2025-04-17T10:19:58.595+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:19:58.596+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:20:01.150+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 1 in the cart
-2025-04-17T10:20:01.195+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-4] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:20:01.196+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:20:10.756+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.controller.CartController   : Updating product using Id 13 and quantity 1 in the cart
-2025-04-17T10:20:10.772+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-2] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:20:10.772+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:20:16.356+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Checking out the cart
-2025-04-17T10:20:32.582+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:20:32.584+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:20:52.436+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:21:34.639+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.service.InventoryService    : Adding new product: com.boerma.dealvago.domain.dto.ProductDto@3c5ab7d9
-2025-04-17T10:21:34.672+02:00  INFO 39204 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:24:29.589+02:00  INFO 39204 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T10:24:29.608+02:00  INFO 39204 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T10:24:29.614+02:00  INFO 39204 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:24:29.618+02:00  INFO 39204 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T10:24:29.644+02:00  INFO 39204 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-17T10:24:35.655+02:00  INFO 33912 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Starting DealvagoApplication using Java 21.0.4 with PID 33912 (C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago\target\classes started by sandr in C:\Users\sandr\Documents\ITHS\WebbserverProgramming40p\Labb\Dealvago)
-2025-04-17T10:24:35.657+02:00  INFO 33912 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-04-17T10:24:36.915+02:00  INFO 33912 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-17T10:24:37.028+02:00  INFO 33912 --- [Dealvago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
-2025-04-17T10:24:38.043+02:00  INFO 33912 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-17T10:24:38.094+02:00  INFO 33912 --- [Dealvago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-17T10:24:38.097+02:00  INFO 33912 --- [Dealvago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-04-17T10:24:38.209+02:00  INFO 33912 --- [Dealvago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-17T10:24:38.209+02:00  INFO 33912 --- [Dealvago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2479 ms
-2025-04-17T10:24:38.651+02:00  INFO 33912 --- [Dealvago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-17T10:24:38.765+02:00  INFO 33912 --- [Dealvago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-04-17T10:24:38.844+02:00  INFO 33912 --- [Dealvago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-17T10:24:39.546+02:00  INFO 33912 --- [Dealvago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-17T10:24:39.593+02:00  INFO 33912 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-17T10:24:40.701+02:00  INFO 33912 --- [Dealvago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a47036
-2025-04-17T10:24:40.703+02:00  INFO 33912 --- [Dealvago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-17T10:24:41.026+02:00  INFO 33912 --- [Dealvago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.40
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-17T10:24:45.427+02:00  INFO 33912 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-17T10:24:45.441+02:00  INFO 33912 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:24:47.098+02:00  WARN 33912 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-17T10:24:47.179+02:00  INFO 33912 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2025-04-17T10:24:48.895+02:00  INFO 33912 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-17T10:24:48.931+02:00  INFO 33912 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 14.077 seconds (process running for 15.249)
-2025-04-17T10:24:49.137+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-17T10:24:49.139+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-17T10:24:49.144+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-04-17T10:25:45.287+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:25:45.290+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:25:53.384+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Adding product using Id 9 and quantity 2 to the cart
-2025-04-17T10:25:53.430+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:25:53.430+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:26:05.200+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Checking out the cart
-2025-04-17T10:26:09.465+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
-2025-04-17T10:26:09.467+02:00  INFO 33912 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
-2025-04-17T10:28:26.619+02:00  INFO 33912 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-17T10:28:26.644+02:00  INFO 33912 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-17T10:28:26.656+02:00  INFO 33912 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-17T10:28:26.663+02:00  INFO 33912 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-17T10:28:26.693+02:00  INFO 33912 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-22T11:06:32.759+02:00  INFO 42120 --- [Dealvago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-22T11:06:32.765+02:00  INFO 42120 --- [Dealvago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22T11:06:33.035+02:00  WARN 42120 --- [Dealvago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-22T11:06:33.049+02:00  INFO 42120 --- [Dealvago] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-04-22T11:06:33.321+02:00  INFO 42120 --- [Dealvago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-22T11:06:33.328+02:00  INFO 42120 --- [Dealvago] [main] c.boerma.dealvago.DealvagoApplication    : Started DealvagoApplication in 3.606 seconds (process running for 4.286)
+2025-04-22T11:06:41.860+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-22T11:06:41.861+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-22T11:06:41.865+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-22T11:06:48.891+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:06:48.894+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:07:04.466+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-4] c.b.dealvago.controller.CartController   : Adding product using Id 10 and quantity 1 to the cart
+2025-04-22T11:07:04.564+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-5] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:07:04.566+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-5] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:07:09.021+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-7] c.b.dealvago.controller.CartController   : Adding product using Id 8 and quantity 1 to the cart
+2025-04-22T11:07:09.049+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-6] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:07:09.050+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-6] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:07:12.760+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-8] c.b.dealvago.controller.CartController   : Adding product using Id 4 and quantity 1 to the cart
+2025-04-22T11:07:12.789+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-10] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:07:12.790+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-10] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:07:14.962+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-9] c.b.dealvago.controller.CartController   : Adding product using Id 3 and quantity 1 to the cart
+2025-04-22T11:07:14.990+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-1] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:07:14.991+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-1] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:07:21.284+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-2] c.b.dealvago.controller.CartController   : Checking out the cart
+2025-04-22T11:07:24.880+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-3] c.b.d.controller.ProductController       : GET /products received with search='null'
+2025-04-22T11:07:24.881+02:00  INFO 42120 --- [Dealvago] [http-nio-8080-exec-3] c.b.dealvago.service.InventoryService    : Fetching all products — no search term provided
+2025-04-22T11:08:26.516+02:00  INFO 42120 --- [Dealvago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-22T11:08:26.533+02:00  INFO 42120 --- [Dealvago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-22T11:08:26.539+02:00  INFO 42120 --- [Dealvago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-22T11:08:26.543+02:00  INFO 42120 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-22T11:08:26.563+02:00  INFO 42120 --- [Dealvago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
