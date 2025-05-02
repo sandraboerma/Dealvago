@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class InventoryService {
@@ -34,6 +35,10 @@ public class InventoryService {
         logger.info("Fetching all products — no search term provided");
         List<Product> products = productRepository.findAll();
         return convertToProductDtos(products);
+    }
+
+    public Optional<Product> getProduct(String productName) {
+        return productRepository.findByName(productName);
     }
 
     public List<ProductDto> getProducts(String searchString) {
