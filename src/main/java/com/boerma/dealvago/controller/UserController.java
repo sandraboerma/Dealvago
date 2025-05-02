@@ -1,8 +1,8 @@
 package com.boerma.dealvago.controller;
 
 import com.boerma.dealvago.domain.entity.User;
+import com.boerma.dealvago.service.ShoppingService;
 import com.boerma.dealvago.service.UserService;
-import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +14,11 @@ import java.util.Optional;
 public class UserController {
 
     private final UserService userService;
+    private ShoppingService shoppingService;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, ShoppingService shoppingService) {
         this.userService = userService;
+        this.shoppingService = shoppingService;
     }
 
     @GetMapping("/")
@@ -25,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String loginUser(String username, String password, Model model, HttpSession session) {
+    public String loginUser(String username, String password, Model model) {
         Optional<User> userOptional = userService.findUserByCredentials(username, password);
 
         if (userOptional.isEmpty()) {
@@ -35,12 +37,12 @@ public class UserController {
         }
 
         User existinguUser = userOptional.get();
-        session.setAttribute("loggedInUser", existinguUser.getId());
+        shoppingService.loggedInUser(existinguUser);
         return existinguUser.isAdmin() ? "redirect:/admin" : "redirect:/products";
     }
 
     @PostMapping("/register")
-    public String registerUser(String username, String password, String email, Model model, HttpSession session) {
+    public String registerUser(String username, String password, String email, Model model) {
         Optional<User> userOptional = userService.findUserByCredentials(username, password);
 
         if (userOptional.isPresent()) {
@@ -50,7 +52,7 @@ public class UserController {
         }
 
         User newUser = userService.registerUser(username, password, email);
-        session.setAttribute("loggedInUser", newUser.getId());
+        shoppingService.loggedInUser(newUser);
 
         return "redirect:/products";
     }

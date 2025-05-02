@@ -90,7 +90,7 @@ public class SessionCartService {
     }
 
     public void clear() {
-        cart.clear();
+        cart = new ArrayList<>();
     }
 
     private boolean modifyOrderline(int productId, int quantity, ProductDto productDto) {

@@ -1,8 +1,8 @@
 package com.boerma.dealvago.controller;
 
 import com.boerma.dealvago.domain.dto.OrderlineDto;
-import com.boerma.dealvago.service.InventoryService;
-import com.boerma.dealvago.service.SessionCartService;
+import com.boerma.dealvago.domain.entity.User;
+import com.boerma.dealvago.service.*;
 import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,12 +16,20 @@ import java.util.List;
 public class CartController {
 
     private static final Logger logger = LoggerFactory.getLogger(CartController.class);
+    private ShoppingService shoppingService;
     private SessionCartService sessionCartService;
     private InventoryService inventoryService;
+    private EmailService emailService;
 
-    public CartController(SessionCartService sessionCartService, InventoryService inventoryService) {
+    public CartController(ShoppingService shoppingService,
+                          SessionCartService sessionCartService,
+                          InventoryService inventoryService,
+                          EmailService emailService) {
+        this.shoppingService = shoppingService;
         this.sessionCartService = sessionCartService;
         this.inventoryService = inventoryService;
+        this.emailService = emailService;
+
     }
 
     @PostMapping("/cart/add")
@@ -46,11 +54,15 @@ public class CartController {
     }
 
     @PostMapping("/cart/checkout")
-    public String checkout(Model model, HttpSession session) {
+    public String checkout(Model model) {
         logger.info("Checking out the cart");
-        Integer userId = (Integer) session.getAttribute("loggedInUser");
         List<OrderlineDto> cartSnapshot = sessionCartService.getOrderlines();
-        sessionCartService.checkout(userId);
+
+        User user = shoppingService.getLoggedInUser();
+        emailService.sendOrderConfirmationEmail(user.getEmail(), cartSnapshot);
+        logger.info("Order confirmation email sent to {}", user.getEmail());
+
+        sessionCartService.checkout(user.getId());
         inventoryService.removeProductStock(cartSnapshot);
         model.addAttribute("confirmedOrder", cartSnapshot);
         model.addAttribute("totalPrice", sessionCartService.calculateTotalPrice());
